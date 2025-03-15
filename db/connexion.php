@@ -1,15 +1,13 @@
 <?php
-$server = "localhost";
-$username = "root";
-$password = "";
-$database = "meetmj";
-
-mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
-
-try {
-    $connexion = new mysqli($server, $username, $password, $database);
-    $connexion->set_charset("utf8"); 
-} catch (mysqli_sql_exception $e) {
-    die("Erreur de connexion à la base de données : " . $e->getMessage());
-}
+    
+    define('HOST', 'localhost');
+    define('USER', 'root');
+    define('PASSWORD', '');
+    define('DATABASE', 'meetmj');
+    define('PORT', 3306);
+    try {
+        $db = new PDO('mysql:host='.HOST.';port='.PORT.';dbname='.DATABASE.';charset=utf8', USER, PASSWORD);
+    } catch (PDOException $e) {
+        die("Erreur de connexion à la BDD : " . $e->getMessage());
+    }
 ?>

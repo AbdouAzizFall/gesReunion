@@ -82,9 +82,11 @@
 <header>
 <div class="logo">Mon Site</div>
     <nav>
-        <a href="pages\gesReunion.php ">Meet</a>
+        <a href="?page=meet">Meet</a>
         <a href="#">Participants</a>
-        <a href="#">Mespv</a>
+        <a href="#">Calendrier</a>
+        
+
     </nav>
     <div class="profile-actions">
         <i class="fas fa-user-circle"></i>
