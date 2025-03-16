@@ -80,10 +80,10 @@
 <body>
 
 <header>
-<div class="logo">Mon Site</div>
+<div class="logo">Conseil Yeumbeul</div>
     <nav>
         <a href="?page=meet">Meet</a>
-        <a href="#">Participants</a>
+        <a href="?page=participant">Participants</a>
         <a href="#">Calendrier</a>
         
 
