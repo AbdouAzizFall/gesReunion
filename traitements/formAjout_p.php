@@ -1,7 +1,7 @@
 <div class="container mt-5">
     <h2 class="mb-4"><i class="fas fa-user-plus"></i> Ajouter un Participant</h2>
     
-    <form action="ajout_participant.php" method="POST">
+    <form action="traitements/ajout_participant.php" method="POST">
         <!-- ID Participant (Caché) -->
         <input type="hidden" id="id_p" name="id_p">
 
@@ -46,36 +46,36 @@
         <!-- Téléphone -->
         <div class="mb-3">
             <label for="tel_p" class="form-label"><i class="fas fa-phone"></i> Téléphone</label>
-            <input type="tel" class="form-control" id="tel_p" name="tel_p" pattern="[0-9]{10}" required>
+            <input type="tel" class="form-control" id="tel_p" name="tel_p" required>
         </div>
 
         <!-- Section -->
         <div class="mb-3">
             <label for="section_p" class="form-label"><i class="fas fa-layer-group"></i> Section</label>
-            <select class="form-select" id="section_" name="section_" required>
+            <select class="form-select" id="section_" name="section_p" required>
                 <optgroup label="ZONE THIAROYE YEUMBEUL">
-                    <option value="Homme">Thiaroye Yeumbeul 1</option>
-                    <option value="Femme">Thiaroye Yeumbeul 2</option>
-                    <option value="Homme">Seydou Nourou</option>
-                    <option value="Femme">Thiaroye Kaw 1</option>
-                    <option value="Homme">Thiaroye Kaw 2</option>
+                    <option>Thiaroye Yeumbeul 1</option>
+                    <option>Thiaroye Yeumbeul 2</option>
+                    <option>Seydou Nourou</option>
+                    <option>Thiaroye Kaw 1</option>
+                    <option>Thiaroye Kaw 2</option>
                 </optgroup>
                 <optgroup label="ZONE THIAROYE AFIA">
-                    <option value="Homme">Tivaouane Afia</option>
-                    <option value="Femme">Tivaouane Yeumbeul</option>
-                    <option value="Homme">Medina Yeumbeul</option>
-                    <option value="Femme">Daroul Arkham</option>
+                    <option>Tivaouane Afia</option>
+                    <option>Tivaouane Yeumbeul</option>
+                    <option>Medina Yeumbeul</option>
+                    <option>Daroul Arkham</option>
                 </optgroup>
                 <optgroup label="ZONE BOUNE">
-                    <option value="Homme">Tivaouane Alwar</option>
-                    <option value="Femme">Boune</option>
-                    <option value="Homme">Comico</option>
-                    <option value="Femme">Kawsara</option>
+                    <option>Tivaouane Alwar</option>
+                    <option>Boune</option>
+                    <option>Comico</option>
+                    <option>Kawsara</option>
                 </optgroup>
                 <optgroup label="ZONE SAM SAM">
-                    <option value="Homme">Aïnoumady</option>
-                    <option value="Femme">Sam Sam B</option>
-                    <option value="Homme">Sam Sam 3</option>
+                    <option>Aïnoumady</option>
+                    <option>Sam Sam B</option>
+                    <option>Sam Sam 3</option>
                 </optgroup>
             </select>
         </div>
@@ -84,11 +84,11 @@
         <div class="mb-3">
             <label for="fonction_p" class="form-label"><i class="fas fa-briefcase"></i> Fonction</label>
             <select class="form-select" id="fonction_p" name="fonction_p" required>
-                <option value="Homme">PF</option>
-                <option value="Femme">CA</option>
-                <option value="Femme">CIPS</option>
-                <option value="Femme">CL</option>
-                <option value="Femme">CTC</option>
+                <option>PF</option>
+                <option>CA</option>
+                <option>CIPS</option>
+                <option>CL</option>
+                <option>CTC</option>
             </select>
         </div>
 

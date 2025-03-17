@@ -24,10 +24,12 @@
             case 'ajout_r':
                 require_once('traitements\ajout_r.php');
                 break;
-            case 'ajout_p':
-                require_once('traitements\ajout_p.php');
+            case 'formAjout_p':
+                require_once('traitements\formAjout_p.php');
                 break;    
-
+            case 'supPart':
+                require_once('traitements\sup_participant.php');
+                break; 
             default:
                 # code...
                 break;
