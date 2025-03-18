@@ -30,6 +30,9 @@
             case 'supPart':
                 require_once('traitements\sup_participant.php');
                 break; 
+            case 'modifPart':
+                require_once('traitements\modif_participant.php');
+                break; 
             default:
                 # code...
                 break;

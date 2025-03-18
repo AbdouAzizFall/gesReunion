@@ -27,7 +27,7 @@ $participants= $db->query($sql)->fetchAll();
       <td scope="row"><?php echo $participant['section_p'] ?></td>
       <td scope="row"><?php echo $participant['fonction_p'] ?></td>
       <td>
-      <a class="btn btn-primary" href="#"><i class="fas fa-edit"></i>modifier</a>
+      <a class="btn btn-primary" href="?page=modifPart&id=<?php echo $participant['id_p'] ?>"><i class="fas fa-edit"></i>modifier</a>
       <a class="btn btn-danger" href="?page=supPart&id=<?php echo $participant['id_p'] ?>"
         onclick="return confirm('Voulez vous supprimer ce participant')">
         <i class="fas fa-trash-alt"></i></i>supprimer
