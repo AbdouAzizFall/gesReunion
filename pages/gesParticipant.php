@@ -32,12 +32,63 @@ $participants= $db->query($sql)->fetchAll();
         onclick="return confirm('Voulez vous supprimer ce participant')">
         <i class="fas fa-trash-alt"></i></i>supprimer
       </a>
-      </td>
-      <td><button class="btn btn-info"><i class="bi bi-eye"></i> Voir plus</button></td>
-    </tr>
-    <?php endforeach ;?>
-    
-  </tbody>
-</table>
+      
+      <td>
+                        <!-- Button to open the modal -->
+                        <button class="btn btn-info" data-toggle="modal" data-target="#participantModal<?php echo $participant['id_p']; ?>">
+                            <i class="bi bi-eye"></i> Voir plus
+                        </button>
+                    </td>
+                </tr>
+
+                <!-- Modal for viewing participant details -->
+                <div class="modal fade" id="participantModal<?php echo $participant['id_p']; ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Détails du participant</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label>Nom</label>
+                                        <input type="text" class="form-control" value="<?php echo $participant['nom_p']; ?>" readonly>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Prénom</label>
+                                        <input type="text" class="form-control" value="<?php echo $participant['prenom_p']; ?>" readonly>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Email</label>
+                                        <input type="email" class="form-control" value="<?php echo $participant['mail_p']; ?>" readonly>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Téléphone</label>
+                                        <input type="text" class="form-control" value="<?php echo $participant['tel_p']; ?>" readonly>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Section</label>
+                                        <input type="text" class="form-control" value="<?php echo $participant['section_p']; ?>" readonly>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Fonction</label>
+                                        <input type="text" class="form-control" value="<?php echo $participant['fonction_p']; ?>" readonly>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <?php endforeach; ?>
+        </tbody>
+    </table>
 </div>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
