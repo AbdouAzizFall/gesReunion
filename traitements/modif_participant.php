@@ -11,7 +11,7 @@ if(isset($_GET['id'])){
 
 ?>
 <div class="container mt-5">
-    <h2 class="mb-4"><i class="fas fa-user-plus"></i> Modifier un Participant</h2>
+    <h2 class="mb-4"><i class="fas fa-user-plus"></i> Modifier un participant</h2>
     
     <form action="traitements/tmodif_participant.php" method="POST">
         <input type="hidden" id="id_p" name="id_p" value="<?= htmlspecialchars($participant['id_p']) ?>">

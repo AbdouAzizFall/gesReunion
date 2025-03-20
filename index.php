@@ -20,19 +20,31 @@
                 break;
             case 'participant':
                 require_once('pages\gesParticipant.php');
-                break;    
+                break;  
+            case 'admin':
+                require_once('pages\gesAdmin.php');
+                break;     
             case 'ajout_r':
                 require_once('traitements\ajout_r.php');
                 break;
             case 'formAjout_p':
                 require_once('traitements\formAjout_p.php');
                 break;    
+            case 'formAjout_a':
+                require_once('traitements\formAjout_a.php');
+                break;  
             case 'supPart':
                 require_once('traitements\sup_participant.php');
                 break; 
+            case 'supa':
+                require_once('traitements\supa.php');
+                break;        
             case 'modifPart':
                 require_once('traitements\modif_participant.php');
-                break; 
+                break;
+            case 'modifa':
+                require_once('traitements\modifa.php');
+                break;                 
             default:
                 # code...
                 break;

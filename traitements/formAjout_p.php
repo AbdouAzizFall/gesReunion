@@ -1,5 +1,5 @@
 <div class="container mt-5">
-    <h2 class="mb-4"><i class="fas fa-user-plus"></i> Ajouter un Participant</h2>
+    <h2 class="mb-4"><i class="fas fa-user-plus"></i> Ajouter un participant</h2>
     
     <form action="traitements/ajout_participant.php" method="POST">
         <input type="hidden" id="id_p" name="id_p">

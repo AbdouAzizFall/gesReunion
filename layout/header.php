@@ -84,7 +84,7 @@
     <nav>
         <a href="?page=meet">Meet</a>
         <a href="?page=participant">Participants</a>
-        <a href="#">Administrateurs</a>
+        <a href="?page=admin">Administrateurs</a>
         <a href="#">Calendrier</a>
         
 
